@@ -1,7 +1,344 @@
-/* .container {
-    background: red;
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Ruslan+Display&family=Source+Serif+Pro:wght@300&display=swap');
+
+body {
+    background-color: #101521;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
 }
 
-.section {
-    background: blue;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    line-height: 28px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.centred {
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: mone;
+    outline: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(255, 255, 255);
+    margin: 1em 0;
+    padding: 0;
+}
+
+/** Header start **/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    text-align: right;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(105, 105, 105);
+}
+
+.navbar-brand {
+    color: #101521;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-block: 15px;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-family: 'Rammetto One', cursive;
+}
+.navbar {
+    background-color: #101521a2;
+}
+
+.collapse {
+    margin-left: 360px;
+}
+
+.parallax-header {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/photoheader.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/photoheader.png);
+    background-size: cover;
+    position: relative;
+    mix-blend-mode: lighten;
+}
+
+.main-desc {
+    padding-top: 89px;
+}
+
+.nav-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 0.17em;
+    font-family: 'Rammetto One', cursive;
+}
+
+.nav-title_subtitle {
+    line-height: 28px;
+    margin-bottom: 25px;
+    max-width: 400px;
+    font-size: 14px;
+}
+/** Header and **/
+
+/** Section one start **/
+
+.nav-title-title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.125em;
+}
+
+.img-fluid_one {
+    max-width: 300px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+
+.img-fluid_two {
+    height: 370px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.nav-text_one {
+    font-size: 18px;
+    line-height: 144.5%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    max-width: 360px;
+    margin-top: 70px;
+}
+
+.nav-text_two {
+    font-size: 18px;
+    line-height: 144.5%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 150px;
+    max-width: 500px;
+}
+
+
+.img-absolute {
+    left: 0;
+}
+
+.text-absolute {
+    text-align: -webkit-center;
+}
+
+/* .text-absolute {
+    margin-left: 40%;
 } */
+
+
+.photo-item-text {
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/backgroundtext.jpg");
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.photo-item-text p {
+    margin: 0;
+}
+
+
+.col {
+    margin-bottom: 30px;
+    text-align: -webkit-center;
+}
+
+
+
+/** Section one end **/
+
+
+/** Section two start **/
+
+.cta {
+    background: url(../img/) fixed center center;
+    /* opacity: 0.10; */
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.title-title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+
+.title-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.photo-text {
+    width: 300px;
+    height: 150px;
+    background-image: url("../img/backgroundtext.jpg");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-title {
+    height: 130px;
+    width: 250px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/system.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info-text {
+    text-align: center;
+    max-width: 700px;
+}
+
+
+/** Section two end **/
+
+
+/** Section accordion start **/
+
+
+
+.accordion-item {
+    margin-bottom: 45px;
+    margin-top: 40px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+}
+
+
+.info-more .accordion-item {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/luxfon.jpg);
+    width: auto;
+    height: auto;
+}
+
+.info-more .accordion-button {
+    background: linear-gradient(rgba(255, 255, 255, 0.233), rgba(0, 0, 0, .5)), url(../img/luxfon.jpg);
+}
+
+.info-more .collapse {
+    margin: 0;
+    padding: 10px;
+
+}
+.info-more .accordion-body {
+    color: rgb(255, 255, 255);
+}
+
+.accordion .card .card-header h2 {
+    color: #ffffff;
+}
+
+/* .info-more .accordion-collaps {
+    background-color: #101521a2;
+} */
+
+
+/** Section accordion end **/
+
+/** Section three start **/
+
+.title-rules {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.text-rules {
+    height: 160px;
+    width: 320px;
+    background-image: url("../img/fon.jpg");
+    border-radius: 39px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+/** Section three end **/
+
+/** foter start **/
+
+.footer {
+    margin-top: 50px;
+    padding: 50px 0;
+    background: #100E24;
+}
+
+
+.footer-icon {
+    margin-left: 40px;
+}
+
+.footer-left {
+    padding: 30px;
+}
+
+.footer-right {
+    padding: 30px;
+}
+
+
+/** foter end **/
