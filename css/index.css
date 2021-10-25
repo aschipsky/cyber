@@ -11,6 +11,16 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y);
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Serif Pro', serif;
     font-weight: 300;
@@ -202,11 +212,20 @@ hr {
 
 /** Section two start **/
 
-.cta {
-    background: url(../img/) fixed center center;
-    /* opacity: 0.10; */
-    width: 100%;
-    padding-bottom: 50px;
+
+.parallax-uk {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/manuk.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 70px;
+    margin-top: 90px;
 }
 
 .title-title {
@@ -262,19 +281,13 @@ hr {
     margin-top: 40px;
 }
 
-.accordion-button:not(.collapsed) {
-    color: white;
-}
-
-
 .info-more .accordion-item {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/luxfon.jpg);
-    width: auto;
-    height: auto;
 }
 
 .info-more .accordion-button {
     background: linear-gradient(rgba(255, 255, 255, 0.233), rgba(0, 0, 0, .5)), url(../img/luxfon.jpg);
+    color: #ffffff;
 }
 
 .info-more .collapse {
@@ -282,17 +295,14 @@ hr {
     padding: 10px;
 
 }
-.info-more .accordion-body {
-    color: rgb(255, 255, 255);
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.accordion .card .card-header h2 {
-    color: #ffffff;
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
-
-/* .info-more .accordion-collaps {
-    background-color: #101521a2;
-} */
 
 
 /** Section accordion end **/
@@ -302,6 +312,7 @@ hr {
 .title-rules {
     text-align: center;
     margin-bottom: 80px;
+    margin-top: 30px;
 }
 
 .text-rules {
@@ -315,6 +326,10 @@ hr {
     align-items: center;
     text-align: center;
     font-size: 16px;
+}
+
+.text-rul {
+    padding: 20px;
 }
 
 /** Section three end **/
@@ -342,3 +357,5 @@ hr {
 
 
 /** foter end **/
+
+
