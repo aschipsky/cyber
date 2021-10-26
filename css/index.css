@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Ruslan+Display&family=Source+Serif+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto+Condensed:wght@300&display=swap');
 
 body {
     background-color: #101521;
@@ -22,18 +22,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Serif Pro', serif;
     font-weight: 300;
     color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 p {
-    line-height: 28px;
-    font-family: 'Source Serif Pro', serif;
-}
-
-.centred {
-    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 a {
@@ -47,14 +42,6 @@ a:hover, a:focus {
     outline: 0;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(255, 255, 255);
-    margin: 1em 0;
-    padding: 0;
-}
 
 /** Header start **/
 
@@ -177,11 +164,6 @@ hr {
     text-align: -webkit-center;
 }
 
-/* .text-absolute {
-    margin-left: 40%;
-} */
-
-
 .photo-item-text {
     height: 100px;
     width: 100px;
@@ -216,10 +198,10 @@ hr {
 .parallax-uk {
     background: #000;
     background: linear-gradient(
-            rgb(0, 0, 0, 0.3),
-            rgb(0, 0, 0, 0.8)
+            rgba(0, 0, 0, 0.911),
+            rgba(0, 0, 0, 0.863)
         ),
-        url(/img/manuk.png);
+        url(/img/manuk.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -254,7 +236,10 @@ hr {
 .info-title {
     height: 130px;
     width: 250px;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/system.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.705),
+         rgba(0, 0, 0, 0.74)), 
+        url(../img/system.jpg);
     position: relative;
     display: flex;
     justify-content: center;
@@ -282,11 +267,17 @@ hr {
 }
 
 .info-more .accordion-item {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/luxfon.jpg);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.76), 
+        rgba(0, 0, 0, .5)), 
+        url(../img/luxfon.jpg);
 }
 
 .info-more .accordion-button {
-    background: linear-gradient(rgba(255, 255, 255, 0.233), rgba(0, 0, 0, .5)), url(../img/luxfon.jpg);
+    background: linear-gradient(
+        rgba(255, 0, 0, 0.233),
+        rgba(0, 0, 0, .5)), 
+        url(../img/luxfon.jpg);
     color: #ffffff;
 }
 
@@ -342,16 +333,19 @@ hr {
     background: #100E24;
 }
 
-
-.footer-icon {
-    margin-left: 40px;
+.footer-menu {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 .footer-left {
     padding: 30px;
 }
 
-.footer-right {
+.footer-title {
+    align-items: center;
     padding: 30px;
 }
 
