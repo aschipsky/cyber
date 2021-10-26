@@ -70,9 +70,9 @@ a:hover, a:focus {
     background-color: #101521a2;
 }
 
-/* .collapse {
-    margin-left: 360px;
-} */
+#particles-js {
+    position: absolute;
+}
 
 .parallax-header {
     background: #000;
@@ -95,7 +95,9 @@ a:hover, a:focus {
     position: relative;
     mix-blend-mode: lighten;
 }
-
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: limegreen;
+}
 .main-desc {
     padding-top: 89px;
 }
