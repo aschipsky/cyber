@@ -69,10 +69,6 @@ a:hover, a:focus {
     background-color: #101521a2;
 }
 
-#particles-js {
-    position: absolute;
-}
-
 .parallax-header {
     background: #000;
     background: linear-gradient(
@@ -114,6 +110,7 @@ a:hover, a:focus {
     max-width: 400px;
     font-size: 14px;
 }
+
 /** Header and **/
 
 /** Section one start **/
@@ -189,13 +186,10 @@ a:hover, a:focus {
     text-align: -webkit-center;
 }
 
-
-
 /** Section one end **/
 
 
 /** Section two start **/
-
 
 .parallax-uk {
     background: #000;
@@ -217,7 +211,6 @@ a:hover, a:focus {
     margin-bottom: 30px;
     margin-top: 40px;
 }
-
 
 .title-text {
     text-align: center;
@@ -255,17 +248,10 @@ a:hover, a:focus {
     max-width: 700px;
 }
 
-/* .force {
-    color: rgb(255, 255, 255);
-} */
-
-
 /** Section two end **/
 
 
 /** Section accordion start **/
-
-
 
 .accordion-item {
     margin-bottom: 45px;
@@ -301,8 +287,8 @@ a:hover, a:focus {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-
 /** Section accordion end **/
+
 
 /** Section three start **/
 
@@ -330,6 +316,7 @@ a:hover, a:focus {
 }
 
 /** Section three end **/
+
 
 /** foter start **/
 
@@ -361,8 +348,8 @@ a:hover, a:focus {
     justify-content: center;
 }
 
-
 /** foter end **/
+
 
 @media only screen and (max-width: 860px) {
     .img-fluid_two {
