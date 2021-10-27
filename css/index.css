@@ -18,7 +18,6 @@ body {
     padding-right: calc(var(--bs-gutter-x)/ 2);
     padding-left: calc(var(--bs-gutter-x)/ 2);
     margin-top: var(--bs-gutter-y);
-    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,7 +95,7 @@ a:hover, a:focus {
     mix-blend-mode: lighten;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: limegreen;
+    color: rgb(8, 163, 8);
 }
 .main-desc {
     padding-top: 89px;
@@ -360,7 +359,15 @@ a:hover, a:focus {
 
 
 /** foter end **/
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 860px) {
+    .img-fluid_two {
+        height: 330px;
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .nav-title {
          font-size: 35px;
     }
@@ -370,23 +377,29 @@ a:hover, a:focus {
     }
 
     .img-fluid_two {
-        display: none;
+        height: 360px;
+        width: 250px;
     }
    
-   }
+}
 
    @media only screen and (max-width: 600px) {
-        .img-fluid_one{
-            display: none;
+    .img-fluid_one{
+        display: none;
     }
+
+    .img-fluid_two {
+        display: none;
+    }
+
     .nav-title {
         font-size: 25px;
    }
-   }
+}
 
    @media only screen and (max-width: 350px) {
     .text-rules {
         width: 270px;
     }
-   }
+}
 
